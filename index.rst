@@ -8,8 +8,8 @@ Welcome to Team 4099 Wiki's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
+   test
 
 
 Indices and tables
