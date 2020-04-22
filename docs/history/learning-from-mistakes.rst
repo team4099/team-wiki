@@ -399,4 +399,184 @@ Things We Did Not Do Well
       Make sure you know where sensors and such are going to go *before* the 
       robot design is locked in to avoid this issue.
 
+2017: FIRST Steamworks
+----------------------
+
+`FIRST Steamworks <https://en.wikipedia.org/wiki/FIRST_Steamworks>`_ was a game 
+for which we did many things right, improved on a lot from the previous year, 
+and yet had some small issues that had a `really big impact on the competition 
+season. <https://www.thebluealliance.com/team/4099/2017>`_. This robot was by 
+far simpler than previous years' robots, the prototyping process was (initially)
+well thought out, and our strategic analysis was pretty accurate. Unfortunately,
+electrical issues and problems with our climber mechanism prevented us from
+making elims in a year that put a very high emphasis on each robot being able 
+to reliably climb.
+
+Things We Did Well
+******************
+
+- The initial strategic analysis we went with was pretty accurate
+
+  - We recognized that fuel would not be worth scoring for our team
+
+  - We recognized that the climb was very highly weighted in this game and 
+    therefore that climbing would be critical
+
+- We (finally) realized how important driver practice was
+
+  - Our driver was our programming lead, who spent hours tuning the drivetrain
+    controls and driving around the robot, leading to some pretty good driving
+  
+  - We actually used the coach position as a strategic position, telling the
+    drivers which gears to attempt to pick up and when to come back for the 
+    climb
+
+  - We practiced with the full drive team there during unbag hours
+
+    - Human player, pilot, both drivers, and coach were there for almost all of
+      this practice time
+  
+- Because of this driver practice, the robot was actually pretty well tested 
+
+- During the prototyping phase, we recognized that using a roller system to 
+  pick up gears off of the ground would be the best way to reliably grab gears
+
+- We finished the robot very early for our team (about a week to spare I think?)
+
+- We used pneumatics for the first time in team history
+
+- Mechanically, the simplicity of the robot made it fairly robust
+
+  - There were still some parts that broke (drawer slide for gear intake, 
+    sheet metal on gear intake bending, grip material failing, etc.) but on the
+    whole less mechanical failures than 2016 by far
+
+Things We Did Not Do Well
+*************************
+
+- Electrical issues
+
+  - In part due to the cost of Anderson connectors, but also because we for some
+    reason decided to go against conventional wisdom for what connectors to use
+    on the robot, we used electrical deans rather than Anderson Powerpoles.
+
+    - While as far as I can remember, we didn't have any in-match failures due 
+      to this decision, it made re-connectorizing each component way harder 
+      because it had to be soldered. 
+    
+    - **Lesson to learn:** There are far better places to cut corners than 
+      electrical connectors. If a critical connector fails, or takes too long to
+      replace in a competition, you've lost a match, which you definitely paid
+      more for than you would have for good quality connectors.
+
+  - There were many occasions where we would get hit and brown out or lose 
+    connection to the robot mid-match. Eventually we traced this down to a few 
+    issues:
+
+    - We had not purchased new batteries for a long time. We were relying on 
+      old KOP batteries for a while, because team budget was low for a few 
+      years. This meant we had less margin for high current draw/loose wires to
+      cause brownouts.
+
+      - **Lesson to learn:** Whenever possible, replace competition batteries 
+        every two years. If not possible, use the battery beak to check internal
+        resistance of the batteries, and remove the bad ones from rotation.
+
+    - Battery cables were not tight on a lot of our batteries. This meant that 
+      when hit, or sometimes even just when on the field, we would not be able
+      to move because the voltage going to motors, the radio, and the roboRIO 
+      was not high enough
+
+      - Oddly enough, this wasn't a big enough issue to present itself during 
+        practices or in the pit. We only saw this issue on the field, which was
+        what made it so difficult to troubleshoot.
+
+      - **Lesson to learn:** Check the electrical connections in a competition
+        style setting. This means ramming the robot into walls and shaking it
+        a bunch to make sure nothing loses connection and your voltage doesn't 
+        drop
+
+    - Some soldered electrical connections were not perfect, but covered with
+      black heat shrink tubing, which obscured the problem.
+
+
+- The electrical board was made of perforated metal (not sure if it was steel 
+  or aluminum, which was cut to size and used as a bellypan. This material was 
+  very sharp on the edges, and also not very stiff with everything mounted on 
+  it, leading to:
+
+  - People would semi regularly get cuts on their hands when lifting the robot 
+    or when doing electrical maintenance
+
+  - The entire electrical board would sag down
+
+- While there was a lot of driver practice, it didn't apply super well to the 
+  actual competition field for a couple of reasons:
+
+  - When we practiced, we didn't practice with bumpers on. Unfortunately, our
+    gear intake was significantly impacted by this: it was far more effective 
+    when it stuck outside the frame than when it was tucked into the bumpers.
+
+  - We practiced in the church gym, which was actually an accurate scale model
+    of the field, but we didn't practice with the obstructions of two airships
+    in the way. This led to drivers not relying on the camera for seeing where
+    to pick up gears from, so this was a new thing they had to do at competition
+
+    - To make this worse, we had more latency on the camera during competition 
+      than at practice because of the bandwidth limit on the competition field
+
+    - For various reasons, the driver camera (run through the same UDOO system
+      as 2016) was still not very reliable, regularly dropping out mid-match,
+      which was part of the reason drivers didn't want to rely on the camera
+  
+  - We didn't practice climbing (don't remember why)
+
+- The climber didn't really work very well
+
+  - Though we did test it a few times, we didn't test it in a competition 
+    setting (this means driving the robot into the rope and trying to line up 
+    the rope like you would in competition)
+
+  - The climber spool was very short, requiring a lot of precise alignment
+
+  - When the rope spooled up a bit, it would get pinched on the end of the spool
+    diagonally, leading the robot to get stuck and not go up
+
+  - The climber motor was a BAG motor which was not geared down enough to give 
+    it enough margin to be able to power through issues like the above
+
+- We were hesitant to make changes to the robot, even when it was clear some 
+  things didn't work as well as they should have
+
+  - This is good to a point, but you also have to know when to give up on a 
+    failing design and move on to a different one
+
+  - In particular, we should have changed the gear intake to a simple passive
+    design when we realized that passive gear intake bots were running faster
+    and more cycles than we were
+  
+  - We should also have revisited the climber design when it didn't work very 
+    well at our first competition
+
+
+- **Big lessons to learn:**
+
+  - Make sure you practice in a competition setting. This means running your 
+    cycles at the correct distance away from your drivers, making sure you use
+    the robot as it will be in competition (bumpers, controls, etc), and ideally
+    use carpet to practice on so game pieces and the robot behave as they would
+    during competition.
+
+  - Design the robot with the ideal cycle in mind. This means however you can,
+    reduce the amount of precision the drivers need, especially when they're far
+    away from the robot. Sometimes, you have to trade off between intake 
+    precision required and outtake precision required (wide intake means you can
+    intake easily, but the game piece isn't in as defined of a position in your
+    robot). In this case, consider where you need to make the task the easiest. 
+    For 2017, since intaking was far away and outtaking was right next to the 
+    driver stations, it may have made sense to have a wide intake. For the 
+    climber, this wasn't an issue, as it didn't really matter where on the spool
+    the robot connected to the rope. The climber spool, then, could have been
+    wider with essentially no negative consequences.
+
 
