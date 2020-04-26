@@ -8,7 +8,9 @@ Welcome to Team 4099 Wiki's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Team History
-
+   
    docs/history/index
+
+   docs/mechanical/index
+   
 
