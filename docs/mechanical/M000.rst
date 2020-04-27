@@ -1,5 +1,5 @@
-Introduction
-============
+M000: Introduction
+==================
 
 About
 -----
@@ -12,7 +12,7 @@ FRC is a very interesting group of people. We build robots from scratch in two m
 Structure
 ---------
 This documentation is organized in a way that may be confusing at first, but after a bit of explanation it will all make sense.  
-You may have noticed but the address for each page doesn't match the title. For example, the last part of the address for this page is M001.html. Every page in this section has been given a 3 digit code. The first digit is either 0 or 1. It is 0 for more abstract pages and 1 for more content focused ones. The second digit differentiates content focused pages. If it is 0, it is core content; these are things you should definetly know. If it is 1, it is more detailed and specific content; these things are nice to know.   
+You may have noticed the M000 in the title of this page. Every page in this section has been given a 3 digit code. The first digit is either 0 or 1. It is 0 for more abstract pages and 1 for more content focused ones. The second digit differentiates content focused pages. If it is 0, it is core content; these are things you should definetly know. If it is 1, it is more detailed and specific content; these things are nice to know. In addition, the reST and html file are named with the code.
   
 Each page, other than this one, will have a summary and a further reading section. The summary will explain what that page covers, and the further reading section will detail other sources for more information, or sources from which the page was written.  
   
