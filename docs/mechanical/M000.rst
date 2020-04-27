@@ -7,7 +7,7 @@ There are quite a few things you will be able to learn from this documentation. 
   
 The rest is not something that can be boiled down into words and put onto a website, much less by me. The rest comes from trying all of it. The only way to get the rest is to do the things again and again. You will mess up, I can't count the amount of times experienced mechanical members have broken drill bits [#m1]_. Mess up, learn from your mistakes and you will be doing everything right. Try doing the things you haven't done before, and I promise you will get better at things so much faster.  
   
-FRC is a very interesting group of people. We build robots from scratch, and balance it with school. For us, its life as usual. Everyone here is capable and does a tremendous amount to help the team. **Ask Questions!** You have the capability to do anything anyone else is, the only difference is you haven't learned it yet. Asking questions can be hard, because you must admit you don't know. Trust me, the awkwardness of learning is more than worth than the payoff of knowing. Anyone on this team is happy to pass down their knowledge and help you grow. All **you** have to do is ask, and you shall recieve.
+FRC is a very interesting group of people. We build robots from scratch in two months while balancing it with school work. Everyone **is** capable of doing the things we do. Everyone here is capable and does a tremendous amount to help the team. **Ask Questions!** You have the capability to do anything anyone else is, the only difference is you haven't learned it yet. Asking questions can be hard, because you must admit you don't know. Trust me, the awkwardness of learning is more than worth than the payoff of knowing. Anyone on this team is happy to pass down their knowledge and help you grow. All **you** have to do is ask, and you shall recieve.
 
 Structure
 ---------
@@ -16,12 +16,6 @@ You may have noticed but the address for each page doesn't match the title. For 
   
 Each page, other than this one, will have a summary and a further reading section. The summary will explain what that page covers, and the further reading section will detail other sources for more information, or sources from which the page was written.  
   
-
-Happy Reading,  
-  Kandasamy Chokkalingam  
-  
-
-P.S. Joey M. gives his regards
   
 
 .. rubric:: Footnotes
